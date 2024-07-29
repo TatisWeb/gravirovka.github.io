@@ -634,15 +634,15 @@ html {font-size: 9px;}
    @media (min-width: 1300px) {
   
      .main-foto {
-       margin-right: -5rem;
+       margin-right: -3rem;
        width: 60rem;
      }
   
    }
-    @media (min-width: 1700px) {
+    @media (min-width: 1500px) {
    
       .main-foto {
-        margin-right: -5rem;
+        margin-right: 0rem;
         width: 65rem;
       }
    
@@ -898,7 +898,7 @@ background-color: var(--ui-color) !important;
  align-items: center;
  height : 7rem;
  padding-left: 35%;
- padding-right: 5%;
+ padding-right: 7rem;
  z-index: 99;
  transition: 0.4s;
 }
