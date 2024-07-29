@@ -60,7 +60,7 @@ path:hover{
 }
 /* container aligns */
 .container{
- max-width: 110rem;
+ max-width: 120rem;
  margin: 0 auto;
 }
 
@@ -894,20 +894,25 @@ background-color: var(--ui-color) !important;
  position: fixed ;
  width: 100%;
  display: flex;
- justify-content: space-around;
+ justify-content: space-evenly ;
  align-items: center;
  height : 7rem;
- padding-left: 35%;
+ padding-left: 25%;
  padding-right: 9rem;
+ 
  z-index: 99;
  transition: 0.4s;
 }
 @media (min-width: 1025px ){
  .header-menu-pc{
-  padding-right: 9rem;
+  padding-right: 15rem;
  }
 }
-
+@media (min-width: 1700px) {
+  .header-menu-pc {
+    padding-right: 18rem;
+  }
+}
 .nav__color{
  background-color: var(--ui-color);
 }
