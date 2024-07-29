@@ -616,7 +616,100 @@
 </svg>
          </i> 
         </a> 
+      <style>
+           /* Modal intro window */
+ 
+.close {
+position: absolute;
+right: 2rem;
+top: 2rem;
+width: 3rem;
+height: 3rem;
+opacity: 1;
+z-index: 10;
+}
+.close:hover {
+ transform: scale(1.3);
+}
+.close:before, .close:after {
+position: absolute;
+left: 1.5rem;
+content: ' ';
+height: 3rem;
+width: .3rem;
+background-color: var(--main-color);
+}
+.close:before {
+transform: rotate(45deg);
+}
+.close:after {
+transform: rotate(-45deg);
+}
+       
+.modal-icon {
+ width: 100%;
+ display: flex;
+ flex-wrap: nowrap;
+ justify-content: space-around ;
+}
+
+.modal-icon a{
+ margin-top: 1rem;
+ color: var(--main-color);
+ transition: 0.4s;
+ text-decoration: none;
+ font-size: 3rem;
+}
+.modal-s__main {
+  display: none;
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1f1f1fA1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+          
+        }
+        .show {
+         display: flex;
+        }
+        .btn__center {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          margin: 0 auto;
+          cursor:pointer;
+        }
+        
+        .modal-dialog__wrapper{
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         width: 45rem;
+         height: 72rem;
+         margin:  auto;
+         padding: 2rem;
+         border-radius: .5rem;
+         background-color: #1f1f1f;
+         box-shadow: 0px 0px 15px var(--main-color);
+        }
+        
+        .modal{
+         display: flex;
+         position: fixed;
+         z-index: 999999;
+        }
+     /* img watsaap */
+     
+     .whats__app{
+      height: 4rem;
       
+     }
+	
+        
+      </style>
        
       
       
@@ -652,7 +745,7 @@
         <a class="social-link" title=" Вконтакте" rel="nofollow" href="https://vk.com/lugansk.laser" target="_blank"> 
         
          <i class="icon-vk"> 
-          <svg width="30" height="35" viewbox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+          <svg width="30" height="30" viewbox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg"> 
            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4629 12.6467C12.4629 12.6467 12.8479 12.6047 13.0451 12.3968C13.2256 12.2063 13.2194 11.8468 13.2194 11.8468C13.2194 11.8468 13.1954 10.1681 13.9894 9.92028C14.772 9.67652 15.7768 11.5437 16.8431 12.2616C17.6487 12.8045 18.2601 12.6857 18.2601 12.6857L21.1097 12.6467C21.1097 12.6467 22.5997 12.5566 21.8933 11.4064C21.8348 11.3122 21.4811 10.5553 19.7751 9.00054C17.9878 7.37307 18.2277 7.63629 20.3793 4.82073C21.6898 3.1062 22.2136 2.05946 22.0498 1.61188C21.8943 1.18376 20.9302 1.29744 20.9302 1.29744L17.7227 1.3169C17.7227 1.3169 17.4848 1.28515 17.3085 1.3886C17.1363 1.49 17.0247 1.72659 17.0247 1.72659C17.0247 1.72659 16.5176 3.05294 15.8404 4.18162C14.412 6.56189 13.8412 6.68787 13.6075 6.54038C13.0639 6.19522 13.1995 5.15565 13.1995 4.41719C13.1995 2.10964 13.5564 1.14791 12.5057 0.899025C12.1572 0.816064 11.9005 0.761781 11.0084 0.752563C9.86374 0.741296 8.89545 0.756659 8.34662 1.01988C7.98142 1.19502 7.6997 1.58627 7.87186 1.6088C8.08368 1.63646 8.56365 1.73581 8.81824 2.07584C9.14691 2.51523 9.13544 3.50052 9.13544 3.50052C9.13544 3.50052 9.3243 6.21673 8.69407 6.5537C8.2621 6.78517 7.66944 6.31301 6.39543 4.15295C5.7433 3.0468 5.25081 1.82389 5.25081 1.82389C5.25081 1.82389 5.15586 1.59549 4.98578 1.47258C4.78023 1.32407 4.49329 1.27798 4.49329 1.27798L1.44548 1.29744C1.44548 1.29744 0.987417 1.30973 0.819427 1.50536C0.670219 1.67845 0.807949 2.03795 0.807949 2.03795C0.807949 2.03795 3.19424 7.51851 5.89668 10.2808C8.37479 12.8127 11.1878 12.6467 11.1878 12.6467H12.4629Z" fill="white" /> 
           </svg> 
          </i> 
