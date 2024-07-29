@@ -642,7 +642,7 @@ html {font-size: 9px;}
     @media (min-width: 1500px) {
    
       .main-foto {
-        margin-right: 0rem;
+        margin-right: - 3rem;
         width: 65rem;
       }
    
@@ -898,13 +898,13 @@ background-color: var(--ui-color) !important;
  align-items: center;
  height : 7rem;
  padding-left: 35%;
- padding-right: 7rem;
+ padding-right: 9rem;
  z-index: 99;
  transition: 0.4s;
 }
 @media (min-width: 1025px ){
  .header-menu-pc{
-  padding-right: 20%;
+  padding-right: 9rem;
  }
 }
 
@@ -1009,6 +1009,7 @@ background-color: var(--ui-color) !important;
   display: flex;
   width: 100%;
   justify-content: space-around;
+  align-items: center ;
  }
  .social-link{
   transition: .4s;
