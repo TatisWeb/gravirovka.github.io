@@ -38,7 +38,7 @@
 	margin: 0px 0px 2rem 0px;
 }
 .form__label {
- color: whitesmoke;
+ color: #fff;
 	font-size: 1.5rem;
 	display: block;
 	margin: 0px 0px 1rem 0px;
@@ -53,7 +53,7 @@
 	font-size: 2.5rem;
 	transition: all 0.5s ease 0s;
 	border: none;
-	border-bottom: .3rem solid #424242;
+	border-bottom: .3rem solid #fff;
 }
 
 .form__input:focus {
@@ -70,7 +70,7 @@ textarea.form__input {
 	background: transparent;
 	color: #ccc9ce;
 	border: none;
-	border-bottom: .3rem solid #424242 ;
+	border-bottom: .3rem solid #fff;
 }
 
 .options {
@@ -140,7 +140,7 @@ textarea.form__input {
 	border-radius: 3rem;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--main-color);
+	background-color: #fff;
 	padding: 0px 2rem;
 }
 .file__preview {
@@ -190,7 +190,7 @@ textarea.form__input {
 	position: absolute;
 	top: .4rem;
 	left: .4rem;
-	background-color: var(--main-color);
+	background-color: #fff;
 	border-radius: .4rem;
 	transform: scale(0);
 }
@@ -208,7 +208,7 @@ textarea.form__input {
 	  justify-content: center;
 	  align-items: center;
 	  min-height: 7rem;
-	  border: 2px solid var(--main-color);
+	  border: 2px solid #fff;
 	  background: transparent;
 	  color: #fff;
 	  font-size: 2rem;
@@ -222,11 +222,11 @@ textarea.form__input {
 }
 .form__button:hover {
 	background-color: #940513;
-	box-shadow: 0 0 25px #088f94;
+	box-shadow: 0 0 25px var(--main-color );
 }
 .form__button:active {
 	top: .3rem;
-	box-shadow: 0 .2rem 0 #940513;
+	box-shadow: 0 .2rem 0 #fff;
 }
 
 /* Price form main */
@@ -258,11 +258,12 @@ textarea.form__input {
 	visibility: visible;
 }
 .form__title {
-	font-size: 3rem;
+	font-size: 3.5rem;
 	font-weight: 700;
 	margin-bottom: 2rem;
 	margin-top: 2rem;
-	color: #c1c1c3;
+	margin-left: 2rem;
+	color: #fff;
 }
 .form__item {
 	margin: 0px 0px 2rem 0px;
@@ -270,8 +271,8 @@ textarea.form__input {
 }
 .form__input__price {
  background: transparent;
- color: white;
- margin-left: rem;
+ color: #fff;
+ margin-left: 0rem;
 	height: 5rem;
 	padding: 0;
 	border: none;
@@ -283,11 +284,11 @@ textarea.form__input {
 }
 
 .form__input__price:focus {
-	box-shadow: 0px 5px 5px -5px #00FF43;
+	box-shadow: 0px 5px 5px -5px var(--main-color);
 	
 }
 .form__input__price._error {
- 	box-shadow: 0 5px 5px -5px red;
+ 	box-shadow: 0 5px 5px -15px var(--main-color );
 }
 
 textarea.form__input__price {
@@ -296,14 +297,14 @@ textarea.form__input__price {
 	background: transparent;
 	color: white;
 	border: none;
-	border-bottom: .4rem solid black;
+	border-bottom: .4rem solid #000;
 	width: 100%;
 }
 
 .checkbox_price {
 }
 .checkbox__price._error .checkbox__label__price::before {
-	box-shadow: 0 0 2rem red;
+	box-shadow: 0 0 2rem var(--main-color );
 }
 .checkbox__input__price {
 	display: none;
@@ -338,7 +339,7 @@ textarea.form__input__price {
 	position: absolute;
 	top: .4rem;
 	left: .4rem;
-	background: var(--main-color);
+	background: #fff;
 	border-radius: .4rem;
 	transform: scale(0);
 }
@@ -350,7 +351,7 @@ textarea.form__input__price {
 	justify-content: center;
 	align-items: center;
 	min-height: 7rem;
-	border: 3px solid var(--main-color);
+	border: 3px solid #fff;
 	box-shadow: 0 0 5px #0D3B40;
 	background: transparent;
 	color: #fff;
@@ -360,19 +361,20 @@ textarea.form__input__price {
 	cursor: pointer;
 	border-radius: .5rem;
 	transition: background-color 0.5s ease 0s;
+	box-shadow: 0 0 15px #fff;
 	position: relative;
 	top: 0;
 }
 
 .form__button__price:active {
 	top: .3rem;
-	box-shadow: 0 0 25px #00FFE3;
+	box-shadow: 0 0 25px var(--main-color);
 }
 
 @media(min-width: 1024px){
 .form__button__price:hover {
  top: .3rem;
- box-shadow: 0 0 25px #00FFE3;
+ box-shadow: 0 0 25px var(--main-color );
 }
 }
 /* modal intro main */
