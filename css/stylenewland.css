@@ -6,7 +6,7 @@
 
 html{ 
   font-family: 'Montserrat', 'Roboto', sans-serif;
-  font-size: 1.5px;
+  font-size: 6.5px;
 }
 body {
  background: #010101;
@@ -634,15 +634,15 @@ html {font-size: 9px;}
    @media (min-width: 1300px) {
   
      .main-foto {
-       margin-right: -3rem;
+      
        width: 60rem;
      }
   
    }
-    @media (min-width: 1500px) {
+    @media (min-width: 1400px) {
    
       .main-foto {
-        margin-right: - 3rem;
+
         width: 65rem;
       }
    
@@ -1041,12 +1041,16 @@ background-color: var(--ui-color) !important;
   display: flex;
  }  
 .footer-content{
- padding: 2rem 3rem 1rem 3rem;
  width: 100%;
  height: auto;
  display: flex;
  justify-content: space-between;
 }
+@media(min-width: 767px){
+ .footer-content{
+ padding: 2rem 2rem 1rem 2rem;
+}
+} 
 .footer-links {
  display: flex;
  margin-left: 1rem;
@@ -1083,6 +1087,7 @@ background-color: var(--ui-color) !important;
  align-items: bottom;
  width: 100%;
 }
+
  /* buttons want bay */
  .btn-bay{
    width: 0 auto;
@@ -1625,7 +1630,7 @@ transform: rotate(-45deg);
  .form__price{
   background-color: #171819;
   max-width: 80rem;
-  padding: 2rem 5rem 2rem 5rem;
+  padding: 2rem;
   text-align: center;
   position: relative ;
   z-index: 10;
@@ -1633,7 +1638,7 @@ transform: rotate(-45deg);
  }
  
  .form__price__bay{
-   max-width: 110rem;
+   max-width: 120rem;
    margin: 0 auto;
    position: relative;
    z-index: 50;
