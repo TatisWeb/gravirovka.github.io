@@ -619,7 +619,6 @@ html {font-size: 9px;}
   @media (min-width: 837px) {
 
     .main-foto{
-      margin-right: -5rem;
       width: 55rem;
       height: 67rem;
     }
@@ -1002,7 +1001,7 @@ background-color: var(--ui-color) !important;
  .footer-icon{
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center ;
  }
  .social-link{
@@ -1043,12 +1042,13 @@ background-color: var(--ui-color) !important;
 .footer-content{
  width: 100%;
  height: auto;
+ margin: 1rem;
  display: flex;
  justify-content: space-between;
 }
 @media(min-width: 767px){
  .footer-content{
- padding: 2rem 2rem 1rem 2rem;
+ padding: 4rem;
 }
 } 
 .footer-links {
@@ -1059,11 +1059,12 @@ background-color: var(--ui-color) !important;
  height: 100%;   
  }
 .footer-icon {
- margin-right: 0rem;
+ padding-left : 5rem;
  margin-top: 1.5rem;
  display: flex;
- justify-content: space-around;
+ justify-content: space-between ;
  height: 100%;
+ margin-right:2rem;
  }
  @media(max-width: 767px){
   .footer-icon{
