@@ -134,6 +134,7 @@ $(document).ready(function() {
  // Owl Carousel
  $(".slider2").owlCarousel({
    items: 1,
+   center: true, 
    margin: 10,
    loop: true,
    nav: true,
