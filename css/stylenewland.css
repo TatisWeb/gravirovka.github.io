@@ -836,7 +836,8 @@ background-color: var(--ui-color) !important;
   transform: translateX(0%);
 }
  mark {
-   background-color: #E52526;
+   background-color: var(--main-color );
+   box-shadow: 0px 0px 15px red;
    color: black;
    padding: 0rem 0.5rem 0.2rem 0.5rem;
    text-align: center;
@@ -894,7 +895,7 @@ background-color: var(--ui-color) !important;
  width: 100%;
  display: flex;
  justify-content: space-evenly ;
- align-items: center;
+ align-items: center ;
  height : 7rem;
  z-index: 99;
  transition: 0.4s;
@@ -905,10 +906,10 @@ background-color: var(--ui-color) !important;
 }
 .menu__pc{
  display: flex;
- padding-left: 25%;
+ padding-left: 40%;
  padding-right: 4rem;
  width:  100%;
- align-items: center;
+ align-items: center ;
  justify-content: space-around;
 }
 .menu__pc__icon{
@@ -1023,7 +1024,6 @@ background-color: var(--ui-color) !important;
   margin-top: 3rem;
   height: 35rem;
   width: 100%;
-  
   background: #151719;
  }
  .footer-icon a {
@@ -1045,7 +1045,6 @@ background-color: var(--ui-color) !important;
 .footer-content{
  width: 100%;
  height: auto;
- margin: 1rem;
  display: flex;
  justify-content: space-between;
 }

@@ -190,7 +190,7 @@ textarea.form__input {
 	position: absolute;
 	top: .4rem;
 	left: .4rem;
-	background-color: #fff;
+	background-color: var(--main-color );
 	border-radius: .4rem;
 	transform: scale(0);
 }
@@ -258,7 +258,7 @@ textarea.form__input {
 	visibility: visible;
 }
 .form__title {
-	font-size: 3.5rem;
+	font-size: 3rem;
 	font-weight: 700;
 	margin-bottom: 2rem;
 	margin-top: 2rem;
@@ -339,7 +339,7 @@ textarea.form__input__price {
 	position: absolute;
 	top: .4rem;
 	left: .4rem;
-	background: #fff;
+	background: var(--main-color);
 	border-radius: .4rem;
 	transform: scale(0);
 }
