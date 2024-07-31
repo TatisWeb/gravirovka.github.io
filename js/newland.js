@@ -126,18 +126,37 @@ $(document).ready(function() {
 });
 
 // second slider owl carousel 2
-
+ 
+ // Slider portfolio
+ 
+ //first slider owl corusel 2
  $(function() {
-  // Owl Carousel 2
- $('.slider-2').owlCarousel({
- loop: true,
- margin: 30,
- nav: false,
- items: 1,
- dots: false,
- autoplay: true,
- autoplayTimeout: 15000,
- smartSpeed: 3000,
+ // Owl Carousel
+ $(".slider2").owlCarousel({
+   items: 1,
+   margin: 10,
+   loop: true,
+   nav: true,
+   navSpeed: 500,
+   dots: true, 
+   responsive: {
+     0: {
+       items: 1
+     }
+     },
+     responsive: {
+         600: {
+           items: 2
+         }
+         },
+         responsive: {
+             800: {
+               items: 
+               2
+             }
+   }
+ });
+
  });
  
- });
+ 
