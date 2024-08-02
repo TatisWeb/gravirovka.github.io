@@ -1,3 +1,19 @@
+//  категория Товары
+
+ 
+
+   $('.thref_active').on('click', function(x) {
+     x.preventDefault();
+     $(this).toggleClass('thref');
+   });
+
+  $('.thref').on('click', 
+   function(t) {
+   t.preventDefault();
+   $(this).toggleClass('thref_active');
+ }); 
+
+
 // button intro
 
 $('.menu-btn').on('click', function(e) {
