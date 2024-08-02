@@ -195,15 +195,15 @@
     <h2 class="text-intro_red">ГРАВИРОВКА </h2>
     <h1 style="margin-top: 0.2rem" class="text-intro_hi">ЛУГАНСК</h1>
    
-    <h3 style="margin-top: 1rem"  class="text-intro_design"><span> Для декора, рекламы и <br> производства </span></h3>
+    <h3 style="margin-top: 1rem color:white;"  class="text-intro_design"><span> Для декора, рекламы и <br> производства </span></h3>
     
-    <h2 style="margin-top: 2rem" class="intro__content__dev">
+    <h2 style="margin-top: 2rem; color:white;" class="intro__content__dev">
       Гравировка и маркировка<br> на любых поверхностях и материалах <br>
       </h2>
     
        
-       <h2 style="margin-top:1rem; " class="intro__content__dev">
- <mark style="color:#fff">
+       <h2 style=" margin-top:1rem; " class="intro__content__dev">
+ <mark  style="color:#fff">
        Метал | Пластик | Камень
        | Дерево | Кожа </mark>
       </h2>
@@ -251,7 +251,6 @@
   <div class="img__content__text">
    <h5><mark>Наша компания </mark></h5>
  </div>
- <h6> 2 года на рынке Луганска </h6>
   <p class="text">
   «Лазерная резка» — занимаемся производством деталей и изделий из металла, пластика и дерева с помощью лазера. Мы используем современные технологии и оборудование, чтобы создавать качественные продукты.
   
@@ -395,31 +394,20 @@
      border-color: var(--main-color);
      box-shadow: 0px 0px 15px #fff;
    }
-    
      .--item-pin {
        display: block;
        width: 100%;
        height: 100%;
        object-fit: cover;
-      
       } 
-
-     
-    
-
-      
-    
      </style>
    </section>
- 
-
             <!-- Block my services-->
 <section>  
          <h2 class="services-title"><mark>Услуги</mark></h2>
   
   <div class="my__services">
      
-              
  <div class="developement __items">
       <div class="developement __logo">
          <img class="internet-img" src="img/uslugi/metal.jpg" alt="гравировка лазерная луганск ">
@@ -511,7 +499,47 @@
   
             
   <div class="slider-case">
-    <h3 class="slider-title"><mark>Товары</mark></h3>     
+    <h3 class="slider-title"><mark>Товары</mark></h3> 
+  <div class="slider-case-categories">
+    
+   <a class="thref_active "
+   style="border: 2px solid red"
+   href="javascript:;" >Все товары</a>
+       <a class="thref_active " href="javascript:;"  >Для подарков</a>
+          <a class="thref_active " href="javascript:;"  >Упаковка</a>
+             <a class="thref_active "  href="javascript:;"  >Адресники</a>
+                <a class="thref_active " href="javascript:;"  >Браслеты</a>
+                   <a class="thref_active " href="javascript:;"  >Кулоны / Жетоны</a>
+                      <a class="thref_active "  href="#" >Брелоки</a>
+                  </div>    
+      <style>
+    .slider-case-categories{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: left;
+       align-items: left ;
+       justify-content: flex-start ;
+       padding: 2rem 0rem 0rem 0rem;
+     }  
+/* ховер подчеркивание 
+
+.slider-case-categories a{
+ text-decoration: none;
+ display: inline;
+ background-image: linear-gradient(to bottom, transparent 20%, currentColor 21%);
+ background-position: 0 1.2em;
+ background-repeat: no-repeat;
+ background-size: 0% 2px;
+ transition: background-size 0.1s ease-in-out 0.2s;
+ }
+.slider-case-categories a:hover {
+ background-size: 100% 2px;
+ }
+  */
+
+      </style>
+   
   <div class="arrows-slider">
    <div id="js-owl-prev" class="js-owl-next">
     <img src="img/arrow-left.png" alt="<-">
@@ -539,7 +567,6 @@
    </div>
   </div>  
               
-                 
     <div class="item">
       <div class="item-content">
         <img class="item-pin" src="img/items/kylon.jpg" alt="fitness">
