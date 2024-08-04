@@ -114,7 +114,6 @@ html {font-size: 9px;}
 
 /* slider owl corusel 2*/
 
-
 .slider-title{
  color: #000;
  font-size: 5rem;
@@ -126,7 +125,7 @@ html {font-size: 9px;}
  
 }
 .slider-content{
- padding-bottom: 2rem;
+ padding-bottom: 1rem;
  display: flex;
  flex-direction: column;
  flex-wrap: nowrap;
@@ -163,12 +162,13 @@ html {font-size: 9px;}
  color: var(--main-color);
  font-size: 3.5rem;
  font-weight: 500;
- margin: 0rem;
+ margin: 1rem 0rem 1rem 0;
 }
 .slider-content p{
  font-size: 2rem;
  color: whitesmoke;
  margin-bottom: 2rem;
+ margin-top: -1rem;
 }
 .slider-content a{
  justify-content: center;
@@ -176,7 +176,7 @@ html {font-size: 9px;}
  text-align: center;
  text-decoration: none;
  margin: 0 auto;
- padding-top: 1rem;
+ padding-top: 0.5rem;
  font-size: 2.5rem;
  color: white;
 }
@@ -201,7 +201,7 @@ html {font-size: 9px;}
  display: flex;
  margin: 0 auto;
  justify-content: space-between;
- 
+ margin: -2rem 0 -2rem 0;
 }
 .js-owl-prev{
  color: var(--main-color);
@@ -216,18 +216,18 @@ html {font-size: 9px;}
 }
 
 .js-owl-next img {
- width: 7rem;
- height: 4rem;
+ width: 10rem;
+ height: auto;
  margin-left: 7rem;
 }
 .js-owl-prev img{
- width: 15rem;
- height: 4rem;
+ width: 10rem;
+ height: auto;
  margin-right: 7rem;
 }
 
 .slider-case{
- margin: 2rem 0 2rem 0;
+ margin: 1rem 0 2rem 0;
  padding: 3rem;
  height: auto;
  width: auto;
@@ -568,7 +568,7 @@ html {font-size: 9px;}
 } 
 @media(max-width: 800px){
   .intro{
-    height:100vh;
+    height: 100vh;
   }
 }
       
@@ -585,7 +585,7 @@ html {font-size: 9px;}
   }
   @media(min-width:781px){
    .main-section{
-    height: auto;
+    height: 80vh;
    }
    .arrow__down__two,.arrow__down{
    display: none;
