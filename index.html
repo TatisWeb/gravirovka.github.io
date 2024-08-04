@@ -317,9 +317,7 @@
  
  
    <section class="portfolio">
- 
- 
- 
+
      <div class="slider-case">
        <h3 class="slider-title"><mark>Наши работы</mark></h3>
    <div class="arrows-slider">
@@ -330,7 +328,7 @@
   <div id="js-owl" class="js-owl-prev"> <img src="img/arrow-right.png" alt="->">
    </div>
    </div>
-   <div class="slider2 owl-carousel ">
+   <div class="slider2 owl-carousel anim-work ">
  
      <div class="--item item-portfolio">
           
@@ -496,22 +494,28 @@
           
  <section class="portfolio">
            
-  
+ 
             
   <div class="slider-case">
     <h3 class="slider-title"><mark>Товары</mark></h3> 
-  <div class="slider-case-categories">
+     <div class="slider-case-categories">
     
-   <a class="thref_active "
-   style="border: 2px solid red"
+   <a id="tovar" onclick="activateMenuItem(this)" class="thref _active "
    href="javascript:;" >Все товары</a>
-       <a class="thref_active " href="javascript:;"  >Для подарков</a>
-          <a class="thref_active " href="javascript:;"  >Упаковка</a>
-             <a class="thref_active "  href="javascript:;"  >Адресники</a>
-                <a class="thref_active " href="javascript:;"  >Браслеты</a>
-                   <a class="thref_active " href="javascript:;"  >Кулоны / Жетоны</a>
-                      <a class="thref_active "  href="#" >Брелоки</a>
-                  </div>    
+   
+   <a id="ypakovka" onclick="activateMenuItem(this)"  class="thref" href="javascript:;"  >Упаковка</a>
+   
+   <a id="adresnik" onclick="activateMenuItem(this)"  class="thref "  href="javascript:;"  >Адресники</a>
+   
+   <a id="braslet" onclick="activateMenuItem(this)"   class="thref " href="javascript:;"  >Браслеты</a>
+  
+   <a id="geton" onclick="activateMenuItem(this)"   class="thref " href="javascript:;"  >Кулоны / Жетоны</a>
+   
+   <a id="podarok" onclick="activateMenuItem(this)"  class="thref "  href="javascript:;" >Для подарка</a>
+   
+                  
+</div>   
+   
       <style>
     .slider-case-categories{
        display: flex;
@@ -522,6 +526,52 @@
        justify-content: flex-start ;
        padding: 2rem 0rem 0rem 0rem;
      }  
+  ._active {
+  border: 2px solid var(--main-color)!important;
+  color: red;
+  border-radius: 2px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+ }
+ .thref {
+  border: 2px solid #fff;
+  border-radius: 2px;
+  background-color: transparent ;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+ }
+.slider-case{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center ;
+  align-items: center ;
+}
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        display: flex;
+    }
+
+    50% {
+        opacity: 0.5;
+        display: flex;
+    }
+
+    100% {
+        opacity: 1;
+        display: flex;
+    }
+}
 /* ховер подчеркивание 
 
 .slider-case-categories a{
@@ -548,12 +598,12 @@
   <div id="js-owl" class="js-owl-prev"> <img src="img/arrow-right.png" alt="->">
    </div>
    </div>
-            
-   <div class="owl-carousel anim">
+   
+   <div id="slider-main" class="owl-carousel anim">
      
-     <div class="item">
-      <div class="item-content">
-        <img class="item-pin" src="img/items/braslet.jpg" alt="лазерная гравировка луганск">
+ <div id="braslet_" class="item">
+   <div class="item-content">
+     <img class="item-pin" src="img/items/braslet.jpg" alt="лазерная гравировка луганск">
         </div>
              
  <div class="slider-content">
@@ -567,7 +617,7 @@
    </div>
   </div>  
               
-    <div class="item">
+ <div id="kylon_" class="item">
       <div class="item-content">
         <img class="item-pin" src="img/items/kylon.jpg" alt="fitness">
         </div>
@@ -580,7 +630,21 @@
     </a>
    </div>
   </div>
-   <div class="item">
+  <div id="kylon_" class="item">
+    <div class="item-content">
+      <img class="item-pin" src="img/items/kylon.jpg" alt="fitness">
+    </div>
+  
+    <div class="slider-content">
+      <h5 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRight">Кулон/Адресник круг</h5>
+      <p data-animation-out="animate-out fadeOutLeft" data-animation-in="slideInLeft">Кулон/Адресник- срок изготовления 10 дней</p>
+      <p>Цена: 500 ₽</p>
+      <a data-animation-in="slideInUp" data-animation-out="animate-out slideOutDown" href="#" class="btn-neon see-content">Заказать
+      </a>
+    </div>
+  </div>
+  
+   <div id="geton_" class="item">
       <div class="item-content">
         <img class="item-pin" src="img/items/geton.jpg" alt="fitness">
         </div>
@@ -594,7 +658,7 @@
    </div>
   </div> 
   
-   <div class="item">
+   <div id="podarok_" class="item">
      <div class="item-content">
        <img class="item-pin" src="img/items/korobka.jpg" alt="fitness">
      </div>
@@ -607,7 +671,8 @@
        </a>
      </div>
    </div>
-     <div class="item">
+   
+   <div id="podarok_" class="item">
       <div class="item-content">
         <img class="item-pin" src="img/items/zagigalka.jpg" alt="лазерная гравировка луганск">
         </div>
@@ -622,9 +687,302 @@
     </a>
    </div>
   </div>  
-              
+ 
+ <div id="adresnik_" class="item">
+   <div class="item-content">
+     <img class="item-pin" src="img/items/adresnik.jpg" alt="лазерная гравировка луганск">
+   </div>
+ 
+   <div class="slider-content">
+     <h5 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRight">Адресник</h5>
+     <p data-animation-out="animate-out fadeOutLeft" data-animation-in="slideInLeft">Адресники всегда в наличии </p>
+ 
+ 
+     <p>Цена: 500 ₽</p>
+     <a data-animation-in="slideInUp" data-animation-out="animate-out slideOutDown" href="#" class="btn-neon see-content">Заказать
+     </a>
+   </div>
+ </div>
+ </div>
+ 
+ <!-- Slider kylon -->
+    <div id="slider-kylon" style="display: none" class="owl-carousel slider-kylon anim-kylon">
+     
 
-</div>
+              
+ <div id="kylon_" class="item">
+      <div class="item-content">
+        <img class="item-pin" src="img/items/kylon.jpg" alt="fitness">
+        </div>
+             
+ <div class="slider-content">
+    <h5 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRight">Адресник</h5>
+    <p data-animation-out="animate-out fadeOutLeft" data-animation-in="slideInLeft">Адресник- срок изготовления 10 дней</p>
+     <p>Цена: 500 ₽</p>
+    <a data-animation-in="slideInUp" data-animation-out="animate-out slideOutDown" href="#" class="btn-neon see-content">Заказать
+    </a>
+   </div>
+  </div>
+  <div id="kylon_" class="item">
+    <div class="item-content">
+      <img class="item-pin" src="img/items/kylon.jpg" alt="fitness">
+    </div>
+  
+    <div class="slider-content">
+      <h5 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRight">Адресник круг</h5>
+      <p data-animation-out="animate-out fadeOutLeft" data-animation-in="slideInLeft">Адресник- срок изготовления 10 дней</p>
+      <p>Цена: 500 ₽</p>
+      <a data-animation-in="slideInUp" data-animation-out="animate-out slideOutDown" href="#" class="btn-neon see-content">Заказать
+      </a>
+    </div>
+  </div>
+
+</div>           
+
+ <!-- Slider adresnik -->
+ <div id="slider-adresnik" style="display: none" class="owl-carousel slider-adresnik anim-adresnik">
+
+
+
+   <div id="adresniki" class="item">
+     <div class="item-content">
+       <img class="item-pin" src="img/items/adresnik.jpg" alt="fitness">
+     </div>
+
+     <div class="slider-content">
+       <h5 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRight">Адресник</h5>
+       <p data-animation-out="animate-out fadeOutLeft" data-animation-in="slideInLeft">Адресник косточка</p>
+       <p>Цена: 750 ₽</p>
+       <a data-animation-in="slideInUp" data-animation-out="animate-out slideOutDown" href="#" class="btn-neon see-content">Заказать
+       </a>
+     </div>
+   </div>
+   <div id="kylon_" class="item">
+     <div class="item-content">
+       <img class="item-pin" src="img/items/adresnik-dogs.jpg" alt="fitness">
+     </div>
+
+     <div class="slider-content">
+       <h5 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRight">Адресник</h5>
+       <p data-animation-out="animate-out fadeOutLeft" data-animation-in="slideInLeft">Адресник для собак</p>
+       <p>Цена: 750 ₽</p>
+       <a data-animation-in="slideInUp" data-animation-out="animate-out slideOutDown" href="#" class="btn-neon see-content">Заказать
+       </a>
+     </div>
+   </div>
+   
+      <div id="kylon_" class="item">
+        <div class="item-content">
+          <img class="item-pin" src="img/items/adresnik-dogs1.jpg" alt="fitness">
+        </div>
+   
+        <div class="slider-content">
+          <h5 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRight">Адресник</h5>
+       <p data-animation-out="animate-out fadeOutLeft" data-animation-in="slideInLeft">Адресник для собак косточка</p>
+          <p>Цена: 750 ₽</p>
+          <a data-animation-in="slideInUp" data-animation-out="animate-out slideOutDown" href="#" class="btn-neon see-content">Заказать
+          </a>
+        </div>
+      </div>
+
+ </div>
+  <!-- Slider podarok -->
+  <div id="slider-podarok" style="display: none" class="owl-carousel slider-zagigalka anim-podarok">
+ 
+ 
+ 
+    <div id="kylon_" class="item">
+      <div class="item-content">
+        <img class="item-pin" src="img/items/zagigalka.jpg" alt="fitness">
+      </div>
+ 
+      <div class="slider-content">
+        <h5 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRight">Зажигалка</h5>
+        <p data-animation-out="animate-out fadeOutLeft" data-animation-in="slideInLeft">Зажигалка бензиновая</p>
+        <p>Цена: 1800 ₽</p>
+        <a data-animation-in="slideInUp" data-animation-out="animate-out slideOutDown" href="#" class="btn-neon see-content">Заказать
+        </a>
+      </div>
+    </div>
+    
+    <div id="gas_" class="item">
+      <div class="item-content">
+        <img class="item-pin" src="img/items/zagigalka-gas.jpg" alt="fitness">
+      </div>
+ 
+      <div class="slider-content">
+        <h5 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRight">Зажигалка</h5>
+        <p data-animation-out="animate-out fadeOutLeft" data-animation-in="slideInLeft">Зажигалка газовая</p>
+        <p>Цена: 1500 ₽</p>
+        <a data-animation-in="slideInUp" data-animation-out="animate-out slideOutDown" href="#" class="btn-neon see-content">Заказать
+        </a>
+      </div>
+    </div>
+    
+        <div id="impuls" class="item">
+          <div class="item-content">
+            <img class="item-pin" src="img/items/zagigalka-impuls.jpg" alt="fitness">
+          </div>
+    
+          <div class="slider-content">
+            <h5 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRight">Зажигалка</h5>
+            <p data-animation-out="animate-out fadeOutLeft" data-animation-in="slideInLeft">Зажигалка импульсная</p>
+            <p>Цена: 1500 ₽</p>
+            <a data-animation-in="slideInUp" data-animation-out="animate-out slideOutDown" href="#" class="btn-neon see-content">Заказать
+            </a>
+          </div>
+        </div>
+ 
+  </div>
+  
+   <!-- Slider коробка подарочная -->
+   <div id="slider-ypakovka" style="display: none" class="owl-carousel slider-ypakovka anim-ypakovka">
+  
+  
+     <div id="ypakovka_" class="item">
+       <div class="item-content">
+         <img class="item-pin" src="img/items/korobka.jpg" alt="fitness">
+       </div>
+  
+      <div class="slider-content">
+       <h5 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRight">Подарочная коробка</h5>
+         <p data-animation-out="animate-out fadeOutLeft" data-animation-in="slideInLeft">Подарочный каробочек ХДФ</p>
+         <p>Цена: 400 ₽</p>
+         <a data-animation-in="slideInUp" data-animation-out="animate-out slideOutDown" href="#" class="btn-neon see-content">Заказать
+         </a>
+       </div>
+     </div>
+     
+     <div id="kylon_" class="item">
+       <div class="item-content">
+         <img class="item-pin" src="img/items/korobka-white.jpg" alt="fitness">
+       </div>
+  
+       <div class="slider-content">
+         <h5 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRight">Подарочный коробочек белый</h5>
+         <p data-animation-out="animate-out fadeOutLeft" data-animation-in="slideInLeft">Коробка</p>
+         <p>Цена: 300 ₽</p>
+         <a data-animation-in="slideInUp" data-animation-out="animate-out slideOutDown" href="#" class="btn-neon see-content">Заказать
+         </a>
+       </div>
+     </div>
+          <div id="kylon_" class="item">
+            <div class="item-content">
+              <img class="item-pin" src="img/items/korobka-forgeton.jpg" alt="fitness">
+            </div>
+     
+            <div class="slider-content">
+              <h5 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRight"> Коробочек для жетонов</h5>
+              <p data-animation-out="animate-out fadeOutLeft" data-animation-in="slideInLeft">Коробка</p>
+              <p>Цена: 300 ₽</p>
+              <a data-animation-in="slideInUp" data-animation-out="animate-out slideOutDown" href="#" class="btn-neon see-content">Заказать
+              </a>
+            </div>
+          </div>
+  
+   </div>
+   
+    <!-- Slider жетон -->
+    <div id="slider-geton" style="display: none" class="owl-carousel slider-geton anim-geton">
+   
+   
+   
+      <div id="kylon_" class="item">
+        <div class="item-content">
+          <img class="item-pin" src="img/items/geton.jpg" alt="fitness">
+        </div>
+   
+        <div class="slider-content">
+          <h5 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRight">Жетон</h5>
+          <p data-animation-out="animate-out fadeOutLeft" data-animation-in="slideInLeft">Жетоны - срок изготовления 10 дней</p>
+          <p>Цена: 500 ₽</p>
+          <a data-animation-in="slideInUp" data-animation-out="animate-out slideOutDown" href="#" class="btn-neon see-content">Заказать
+          </a>
+        </div>
+      </div>
+      
+      <div id="serdce_" class="item">
+        <div class="item-content">
+          <img class="item-pin" src="img/items/geton-serdce.jpg" alt="fitness">
+        </div>
+   
+        <div class="slider-content">
+          <h5 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRight">Кулон </h5>
+          <p data-animation-out="animate-out fadeOutLeft" data-animation-in="slideInLeft"> Кулон сердце</p>
+          <p>Цена: 500 ₽</p>
+          <a data-animation-in="slideInUp" data-animation-out="animate-out slideOutDown" href="#" class="btn-neon see-content">Заказать
+          </a>
+        </div>
+      </div>
+      
+       <div id="serdce_" class="item">
+         <div class="item-content">
+           <img class="item-pin" src="img/items/geton-army.jpg" alt="fitness">
+         </div>
+      
+         <div class="slider-content">
+           <h5 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRight">Жетон</h5>
+           <p data-animation-out="animate-out fadeOutLeft" data-animation-in="slideInLeft"> Жетон армейский матовый</p>
+           <p>Цена: 950 ₽</p>
+           <a data-animation-in="slideInUp" data-animation-out="animate-out slideOutDown" href="#" class="btn-neon see-content">Заказать
+           </a>
+         </div>
+       </div>
+   
+    </div>
+    
+     <!-- Slider braslet -->
+     <div id="slider-braslet" style="display: none;
+     opacity: 0;
+     animation: fadeInOut 2s ease-in-out;
+     " class="owl-carousel slider-braslet anim-braslet">
+    
+    
+    
+       <div id="kylon_" class="item">
+         <div class="item-content">
+           <img class="item-pin" src="img/items/braslet.jpg" alt="fitness">
+         </div>
+    
+         <div class="slider-content">
+           <h5 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRight">Браслеты</h5>
+           <p data-animation-out="animate-out fadeOutLeft" data-animation-in="slideInLeft">Браслет стальной</p>
+           <p>Цена: 1500 ₽</p>
+           <a data-animation-in="slideInUp" data-animation-out="animate-out slideOutDown" href="#" class="btn-neon see-content">Заказать
+           </a>
+         </div>
+       </div>
+       
+       <div id="kylon_" class="item">
+         <div class="item-content">
+           <img class="item-pin" src="img/items/braslet-silikon.jpg" alt="fitness">
+         </div>
+    
+         <div class="slider-content">
+           <h5 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRight">Браслеты</h5>
+        <p data-animation-out="animate-out fadeOutLeft" data-animation-in="slideInLeft">Браслет силиконовый</p>
+           <p>Цена: 900 ₽</p>
+           <a data-animation-in="slideInUp" data-animation-out="animate-out slideOutDown" href="#" class="btn-neon see-content">Заказать
+           </a>
+         </div>
+       </div>
+         <div id="kylon_" class="item">
+           <div class="item-content">
+             <img class="item-pin" src="img/items/braslet-steel.jpg" alt="fitness">
+           </div>
+       
+           <div class="slider-content">
+             <h5 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutRight">Браслеты</h5>
+             <p data-animation-out="animate-out fadeOutLeft" data-animation-in="slideInLeft">Браслеты для гравировки</p>
+             <p>Цена: 1100 ₽</p>
+             <a data-animation-in="slideInUp" data-animation-out="animate-out slideOutDown" href="#" class="btn-neon see-content">Заказать
+             </a>
+           </div>
+         </div>
+    
+     </div>
+ 
+ <!-- End of slider -->
 </div>
 </section> 
           
