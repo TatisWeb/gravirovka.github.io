@@ -1707,26 +1707,5 @@ transform: rotate(-45deg);
        font-size: 1.5rem;
       }
       
-       .thref_active {
-  border: 2px solid #fff;
-  border-radius: 2px;
-  background-color: transparent ;
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 2rem;
-  margin: 0.5rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
- }
- .thref {
-  border: 2px solid var(--main-color );
-  border-radius: 2px;
-  background-color: transparent ;
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 2rem;
-  margin: 0.5rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
- }
+ 
       
