@@ -589,12 +589,12 @@ html {font-size: 9px;}
     }
   }
   
-@media(min-height: 1094px){
+@media(min-height: 1024px){
  .main-section{
    height: 80vh;
  }
 } 
-  @media(min-width:781px){
+  @media(min-width:960px){
    .main-section{
     height: auto;
    }
@@ -626,7 +626,7 @@ html {font-size: 9px;}
  bottom: 0;
 }
 
-  @media (min-width: 837px) {
+  @media (min-width: 765px) {
 
     .main-foto{
       width: 55rem;
@@ -948,7 +948,7 @@ background-color: var(--main-color) !important;
 }
 }
 
-@media (max-width: 723px) {
+@media (max-width: 834px) {
  .menu__pc {
   display: none;
  }
