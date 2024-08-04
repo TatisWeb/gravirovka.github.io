@@ -571,6 +571,16 @@ html {font-size: 9px;}
     height: 100vh;
   }
 }
+@media(min-height: 768px){
+ .main-section{
+   height: 70%;
+ }
+}
+@media(min-height: 1094px){
+ .main-section{
+   height: auto;
+ }
+}
       
  .intro__content__dev{
    margin-top: 0rem;
