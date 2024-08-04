@@ -20,7 +20,18 @@ $('#braslet').on('click', function (braslet) {
    $('#slider-geton').css('display', 'none');
    $('#slider-ypakovka').css('display', 'none');
    $('#slider-podarok').css('display', 'none');
-   $('#slider-braslet').css('display', 'flex').css('opacity', '1');
+   $('#slider-brelok').css('display', 'none');
+   $('#slider-braslet').css('display', 'flex');
+});
+
+$('#brelok').on('click', function(braslet) {
+  $('#slider-main').css('display', 'none');
+  $('#slider-adresnik').css('display', 'none');
+  $('#slider-geton').css('display', 'none');
+  $('#slider-ypakovka').css('display', 'none');
+  $('#slider-podarok').css('display', 'none');
+  $('#slider-braslet').css('display', 'none');
+  $('#slider-brelok').css('display', 'flex');
 });
 // оставляем только товары в слайдере
 $('#tovar').on('click', function (tovar) {
@@ -29,47 +40,48 @@ $('#tovar').on('click', function (tovar) {
   $('#slider-geton').css('display', 'none');
   $('#slider-ypakovka').css('display', 'none');
   $('#slider-podarok').css('display', 'none');
+  $('#slider-brelok').css('display', 'none');
   $('#slider-main').css('display', 'flex');
 });
 
 // оставляем только adresniki в слайдере
 $('#adresnik').on('click', function(adresniki) {
-    $('#slider-kylon').css('display', 'none');
     $('#slider-braslet').css('display', 'none');
     $('#slider-main').css('display', 'none');
     $('#slider-geton').css('display', 'none');
     $('#slider-ypakovka').css('display', 'none');
     $('#slider-podarok').css('display', 'none');
+    $('#slider-brelok').css('display', 'none');
     $('#slider-adresnik').css('display', 'flex');
 });
 // оставляем только geton в слайдере
 $('#geton').on('click', function(geton) {
-  $('#slider-kylon').css('display', 'none');
     $('#slider-braslet').css('display', 'none');
     $('#slider-adresnik').css('display', 'none');
     $('#slider-main').css('display', 'none');
     $('#slider-ypakovka').css('display', 'none');
     $('#slider-podarok').css('display', 'none');
+    $('#slider-brelok').css('display', 'none');
     $('#slider-geton').css('display', 'flex');
 });
 // оставляем только ypakovka в слайдере
 $('#ypakovka').on('click', function(ypakovka) {
-  $('#slider-kylon').css('display', 'none');
   $('#slider-braslet').css('display', 'none');
   $('#slider-adresnik').css('display', 'none');
   $('#slider-geton').css('display', 'none');
   $('#slider-main').css('display', 'none');
   $('#slider-podarok').css('display', 'none');
+  $('#slider-brelok').css('display', 'none');
   $('#slider-ypakovka').css('display', 'flex');
 });
 // оставляем только podarok в слайдере
 $('#podarok').on('click', function(podarok) {
-  $('#slider-kylon').css('display', 'none');
     $('#slider-braslet').css('display', 'none');
     $('#slider-adresnik').css('display', 'none');
     $('#slider-geton').css('display', 'none');
     $('#slider-ypakovka').css('display', 'none');
     $('#slider-main').css('display', 'none');
+    $('#slider-brelok').css('display', 'none');
     $('#slider-podarok').css('display', 'flex');
 });
 // button intro
@@ -99,7 +111,6 @@ $('.btn-neon').on('click', function(e) {
 });
 
 // btn want bay design
-
 
 $('.btn-design').on('click', function(e) {
  e.preventDefault();
@@ -141,13 +152,9 @@ $(document).ready(function() {
    nav: true,
    navSpeed: 100,
    dots: false, 
-   autoplayTimeout:3000,
-   animateOut: 'fadeOut',
-   animateIn: 'fadeIn',
-   smartSpeed: 100,
   });
   
-  var owl = $(".anim");
+  var owl = $(".anim-main");
   owl.owlCarousel();
   $('.js-owl-prev').click(function() {
    owl.trigger('next.owl.carousel');
@@ -164,7 +171,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 
  // Declare Carousel jquery object
- var owl = $('.anim');
+ var owl = $('.anim-main');
 
  // Carousel initialization
  
@@ -215,7 +222,11 @@ $(document).ready(function() {
    loop: true,
    nav: true,
    navSpeed: 500,
-   dots: true, 
+   dots: true,
+   autoplayTimeout: 3000,
+     animateOut: 'fadeOut',
+     animateIn: 'fadeIn',
+     smartSpeed: 100,
    responsive: {
      0: {
        items: 1
@@ -241,7 +252,7 @@ $(document).ready(function() {
  
    $(function() {
      // Owl Carousel
-     $(".slider-kylon").owlCarousel({
+     $(".slider-brelok").owlCarousel({
        items: 1,
        margin: 0,
        loop: true,
@@ -250,7 +261,7 @@ $(document).ready(function() {
        dots: false
      });
  
-     var owl = $(".anim-kylon");
+     var owl = $(".anim-brelok");
      owl.owlCarousel();
      $('.js-owl-prev').click(function() {
        owl.trigger('next.owl.carousel');
@@ -265,7 +276,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 
  // Declare Carousel jquery object
- var owl = $('.anim-kylon');
+ var owl = $('.anim-main');
 
  // Carousel initialization
  
@@ -632,7 +643,46 @@ $(document).ready(function() {
     
     //animation for Slider our work
     
-    
+    $(document).ready(function() {
+
+ // Declare Carousel jquery object
+ var owl = $('.anim-brelok');
+
+ // Carousel initialization
+ 
+ // add animate.css class(es) to the elements to be animated
+ function setAnimation(_elem, _InOut) {
+  // Store all animationend event name in a string.
+  // cf animate.css documentation
+  var animationEndEvent = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+  _elem.each(function() {
+   var $elem = $(this);
+   var $animationType = 'animated ' + $elem.data('animation-' + _InOut);
+
+   $elem.addClass($animationType).one(animationEndEvent, function() {
+    $elem.removeClass($animationType); // remove animate.css Class at the end of the animations
+   });
+  });
+ }
+
+ // Fired before current slide change
+ owl.on('change.owl.carousel', function(event) {
+  var $currentItem = $('.owl-item', owl).eq(event.item.index);
+  var $elemsToanim = $currentItem.find("[data-animation-out]");
+  setAnimation($elemsToanim, 'out');
+ });
+
+ // Fired after current slide has been changed
+ owl.on('changed.owl.carousel', function(event) {
+
+  var $currentItem = $('.owl-item', owl).eq(event.item.index);
+  var $elemsToanim = $currentItem.find("[data-animation-in]");
+  setAnimation($elemsToanim, 'in');
+ })
+
+});
+
 $(document).ready(function() {
 
  // Declare Carousel jquery object
@@ -672,3 +722,5 @@ $(document).ready(function() {
  })
 
 });
+
+
