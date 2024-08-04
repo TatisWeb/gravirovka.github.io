@@ -581,11 +581,11 @@ html {font-size: 9px;}
    color: var(--main-color);
  }
  .main-section {
-   height: 100vh;
+   height: auto;
   }
   @media(min-width:781px){
    .main-section{
-    height: 80vh;
+    height: auto;
    }
    .arrow__down__two,.arrow__down{
    display: none;
