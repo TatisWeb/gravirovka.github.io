@@ -571,7 +571,6 @@ html {font-size: 9px;}
     height: 100vh;
   }
 }
-      
  .intro__content__dev{
    margin-top: 0rem;
    padding-left: 0rem;
@@ -588,7 +587,6 @@ html {font-size: 9px;}
       height: 80vh;
     }
   }
-  
 @media(min-height: 1024px){
  .main-section{
    height: 80vh;
@@ -857,11 +855,12 @@ background-color: var(--main-color) !important;
 }
  mark {
    background-color: var(--main-color );
-   border-radius: 2px;
+   border-radius: 5px;
    color: black;
    padding: 0rem 0.5rem 0.2rem 0.5rem;
    text-align: center;
    text-justify: center;
+   
  }
 .menu-list {
   margin-top: 0;
@@ -900,7 +899,7 @@ background-color: var(--main-color) !important;
   z-index: 999999;
   cursor: pointer;
 }
-@media (min-width: 723px){
+@media (min-width: 732px){
   .menu-btn{
    display: none;
   }
@@ -948,7 +947,7 @@ background-color: var(--main-color) !important;
 }
 }
 
-@media (max-width: 834px) {
+@media (max-width: 732px) {
  .menu__pc {
   display: none;
  }
@@ -1671,6 +1670,8 @@ transform: rotate(-45deg);
   position: relative ;
   z-index: 10;
   background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #fff;
  }
  
  .form__price__bay{
@@ -1680,7 +1681,7 @@ transform: rotate(-45deg);
    z-index: 50;
    }        
       
- .form_figure {
+ .form_figuree {
   top: 3rem;
   position: absolute;
   z-index: -10;
