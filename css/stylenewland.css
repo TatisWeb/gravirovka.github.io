@@ -765,7 +765,7 @@ html {font-size: 9px;}
   display: flex;
   padding-top : 2rem;
 }
-@media(min-width: 764px){
+@media(min-width: 964px){
  .logo__st{
 margin-left: 5rem;
  }
@@ -899,7 +899,7 @@ background-color: var(--main-color) !important;
   z-index: 999999;
   cursor: pointer;
 }
-@media (min-width: 732px){
+@media (min-width: 834px){
   .menu-btn{
    display: none;
   }
@@ -946,6 +946,7 @@ background-color: var(--main-color) !important;
  padding-left: 20%;
 }
 }
+
 
 @media (max-width: 732px) {
  .menu__pc {
