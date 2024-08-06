@@ -512,7 +512,10 @@ html {font-size: 9px;}
 .price__content__title{
  margin: 0 auto;
 }
+
+
 /* main Intro content */
+
 /*
 
  .arrow__down__img {
@@ -566,7 +569,7 @@ html {font-size: 9px;}
  margin: 1rem 0 0 0;
  background:  var(--ui-color );
 } 
-@media(max-width: 800px){
+@media(max-width: 723px){
   .intro{
     height: 100vh;
   }
@@ -592,7 +595,7 @@ html {font-size: 9px;}
    height: 80vh;
  }
 } 
-  @media(min-width:960px){
+  @media(min-width:723px){
    .main-section{
     height: auto;
    }
@@ -899,7 +902,7 @@ background-color: var(--main-color) !important;
   z-index: 999999;
   cursor: pointer;
 }
-@media (min-width: 834px){
+@media (min-width: 723px){
   .menu-btn{
    display: none;
   }
