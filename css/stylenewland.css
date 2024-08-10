@@ -425,7 +425,7 @@ html {font-size: 9px;}
   background-color: var(--ui-color);
   } 
  .price-title {
-   margin: 2rem 0 2rem 0;
+   margin: 0rem 0 0rem 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -434,7 +434,7 @@ html {font-size: 9px;}
   }
 
  .price-title h3 {
- margin: 4rem;
+ margin: 2rem;
  font-weight: 500;
  color: #fff;
  font-size: 5rem;
@@ -634,7 +634,7 @@ html {font-size: 9px;}
 } 
 @media(max-width: 723px){
   .intro{
-    height: 84vh;
+    height: 91rem;
   }
 }
  .intro__content__dev{
@@ -648,16 +648,7 @@ html {font-size: 9px;}
  .main-section {
    height: auto;
   }
-  @media(min-height: 768px) {
-    .main-section {
-      height: 80vh;
-    }
-  }
-@media(min-height: 1024px){
- .main-section{
-   height: 80vh;
- }
-} 
+
   @media(min-width:723px){
    .main-section{
     height: auto;
