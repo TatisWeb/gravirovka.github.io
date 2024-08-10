@@ -634,7 +634,7 @@ html {font-size: 9px;}
 } 
 @media(max-width: 723px){
   .intro{
-    height: 100vh;
+    height: 84vh;
   }
 }
  .intro__content__dev{
