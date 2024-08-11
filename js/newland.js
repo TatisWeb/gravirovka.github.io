@@ -95,6 +95,50 @@ $('.menu-btn').on('click', function(m) {
  $(this).toggleClass('menu-btn_active');
 });
 
+//burger click ourwork
+$('#burger_ourwork').on('click', function(u) {
+ u.preventDefault();
+ $('.menu').removeClass('menu_active');
+ $('.content').removeClass('content_active');
+ $('.menu-btn').removeClass('menu-btn_active');
+  jQuery.scrollTo('#ourwork');
+});
+
+//burger click price
+$('#burger_price').on('click', function(u) {
+ u.preventDefault();
+ $('.menu').removeClass('menu_active');
+ $('.content').removeClass('content_active');
+ $('.menu-btn').removeClass('menu-btn_active');
+  jQuery.scrollTo('#price');
+});
+
+//burger click tovar
+$('#burger_tovar').on('click', function(u) {
+  u.preventDefault();
+  $('.menu').removeClass('menu_active');
+  $('.content').removeClass('content_active');
+  $('.menu-btn').removeClass('menu-btn_active');
+  jQuery.scrollTo('#tovar');
+});
+//burger click заказать
+$('#burger_zakaz').on('click', function(u) {
+  u.preventDefault();
+  $('.menu').removeClass('menu_active');
+  $('.content').removeClass('content_active');
+  $('.menu-btn').removeClass('menu-btn_active');
+   $('.modal-s__main').toggleClass('show');
+});
+//burger click contact
+$('#burger_contact').on('click', function(u) {
+ u.preventDefault();
+ $('.menu').removeClass('menu_active');
+ $('.content').removeClass('content_active');
+ $('.menu-btn').removeClass('menu-btn_active');
+  jQuery.scrollTo('#contact');
+});
+
+
 //button menu main
 
 $('.menu-close-btn').on('click', function(u) {
