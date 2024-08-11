@@ -536,6 +536,7 @@ html {font-size: 9px;}
 .contact-main{
  display: flex;
  flex-direction: column;
+ margin-bottom: 2rem;
 } 
 .yandex__map{
   width: 100%!important;
