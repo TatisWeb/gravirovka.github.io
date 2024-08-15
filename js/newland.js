@@ -101,7 +101,7 @@ $('#burger_ourwork').on('click', function(u) {
  $('.menu').removeClass('menu_active');
  $('.content').removeClass('content_active');
  $('.menu-btn').removeClass('menu-btn_active');
-  jQuery.scrollTo('#ourwork');
+  jQuery.scrollTo('#ourwork', 400, {offset: -150});
 });
 
 //burger click price
@@ -110,7 +110,7 @@ $('#burger_price').on('click', function(u) {
  $('.menu').removeClass('menu_active');
  $('.content').removeClass('content_active');
  $('.menu-btn').removeClass('menu-btn_active');
-  jQuery.scrollTo('#price');
+  jQuery.scrollTo('#price', 400, {offset: -150});
 });
 
 //burger click tovar
@@ -119,7 +119,7 @@ $('#burger_tovar').on('click', function(u) {
   $('.menu').removeClass('menu_active');
   $('.content').removeClass('content_active');
   $('.menu-btn').removeClass('menu-btn_active');
-  jQuery.scrollTo('#tovar');
+  jQuery.scrollTo('#tovar', 400, {offset: -150});
 });
 //burger click заказать
 $('#burger_zakaz').on('click', function(u) {
@@ -129,13 +129,29 @@ $('#burger_zakaz').on('click', function(u) {
   $('.menu-btn').removeClass('menu-btn_active');
    $('.modal-s__main').toggleClass('show');
 });
+//burger click заказать
+$('#burger_zakaz_pc').on('click', function(u) {
+  u.preventDefault();
+  $('.menu').removeClass('menu_active');
+  $('.content').removeClass('content_active');
+  $('.menu-btn').removeClass('menu-btn_active');
+  $('.modal-s__main').toggleClass('show');
+});
+//burger click заказать
+$('#footer_zakaz').on('click', function(u) {
+  u.preventDefault();
+  $('.menu').removeClass('menu_active');
+  $('.content').removeClass('content_active');
+  $('.menu-btn').removeClass('menu-btn_active');
+  $('.modal-s__main').toggleClass('show');
+});
 //burger click contact
 $('#burger_contact').on('click', function(u) {
  u.preventDefault();
  $('.menu').removeClass('menu_active');
  $('.content').removeClass('content_active');
  $('.menu-btn').removeClass('menu-btn_active');
-  jQuery.scrollTo('#contact');
+  jQuery.scrollTo('#contact', 400, {offset: -50});
 });
 
 
@@ -328,7 +344,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 
  // Declare Carousel jquery object
- var owl = $('.anim-main');
+ var owl = $('.anim-brelok');
 
  // Carousel initialization
  
@@ -734,4 +750,3 @@ $(document).ready(function() {
  })
 
 });
-
