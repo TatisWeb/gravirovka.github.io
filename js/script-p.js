@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		if (error === 0) {
 			form.classList.add('_sending');
-			let response = await fetch('sendmodal.php', {
+			let response = await fetch('telegram.php', {
 				method: 'POST',
 				body: formData
 			});
