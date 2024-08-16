@@ -1250,10 +1250,25 @@ background-color: var(--main-color) !important;
  }
  .footer {
   margin-top: 3rem;
-  height: auto;
+  height: 100%;
   width: 100%;
-  background-color: var(--ui-color);
+  
  }
+ .footer_img{
+   background-color: var(--ui-color);
+   background-image: url(/img/footer.png), url(https://i.postimg.cc/wMXZdSvn/Picsart-24-08-17-03-12-02-991.png);
+     background-size: 500px 100%;
+     background-position: 50%;
+ }
+ @media(min-width: 768px){
+    .footer_img {
+      background-color: var(--ui-color);
+      background-image: url(/img/footer.png), url(https://i.postimg.cc/wMXZdSvn/Picsart-24-08-17-03-12-02-991.png);
+      background-size: 1000px 200%;
+      background-position: 50%;
+    }
+ }
+   
  .footer-icon a {
   font-size: 2rem;
   letter-spacing: 2.5rem;
@@ -1335,7 +1350,7 @@ background-color: var(--main-color) !important;
  justify-content: center;
  align-items: center ;
  padding: 2rem;
- background-color: var(--ui-color);
+ background-color: transparent;
 }
 
  /* buttons want bay */
@@ -2000,7 +2015,7 @@ transform: rotate(-45deg);
      justify-content: center;
      align-items: center;
      background-color: var(--ui-color) ;
-     background-image: url(/img/coast.jpg), url(img/coast.jpg);
+     background-image: url(/img/coast.jpg), url(https://i.postimg.cc/wMXZdSvn/Picsart-24-08-17-03-12-02-991.png);
      background-size: 1000px 100%;
      background-position: 50%;
      }
